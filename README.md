@@ -28,7 +28,7 @@ safevision-industrial/
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/safevision-industrial.git
+git clone https://github.com/chitu444/safevision-industrial.git
 cd safevision-industrial
 pip install -r requirements.txt
 ```
