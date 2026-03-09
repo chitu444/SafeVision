@@ -43,4 +43,4 @@ python app.py
 
 The goal of SafeVision is to automate industrial safety monitoring, reduce human oversight errors, and help organizations maintain safer work environments.
 
-For any quieres, send an email to chitu69420@gmail.com or raise an issue in this repo.
+For any queries, send an email to chitu69420@gmail.com or raise an issue in this repo.
