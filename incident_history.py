@@ -1,16 +1,19 @@
+"""
+ui/pages/incident_history.py
+============================
+Incident history table page.
+"""
+
 import streamlit as st
-import pandas as pd
-from database.db_manager import get_connection
 
-def incident_history():
+from database.db import fetch_incidents
 
-    st.header("Incident History")
 
-    conn = get_connection()
-    df = pd.read_sql_query("SELECT * FROM incidents ORDER BY id DESC", conn)
-    conn.close()
-
+def render() -> None:
+    st.subheader("Incident History")
+    limit = st.number_input("Rows to load", min_value=10, max_value=1000, value=200, step=10)
+    df = fetch_incidents(limit=int(limit))
     if df.empty:
-        st.info("No incidents recorded.")
+        st.info("No incidents logged yet.")
     else:
-        st.dataframe(df)
+        st.dataframe(df, use_container_width=True)
