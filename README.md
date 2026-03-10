@@ -39,6 +39,10 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Screenshots
+![1](https://github.com/user-attachments/assets/e0653793-d922-4864-8298-96e1fdb82494)
+![2](https://github.com/user-attachments/assets/865f264c-3215-4199-a67f-51b52c2659df)
+
 ## Purpose
 
 The goal of SafeVision is to automate industrial safety monitoring, reduce human oversight errors, and help organizations maintain safer work environments.
